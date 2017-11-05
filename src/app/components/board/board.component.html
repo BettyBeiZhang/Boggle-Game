@@ -1,0 +1,6 @@
+<div *ngFor="let tile of data">
+    <div class="grid-item" (click)="tileClick(tile.rowId, tile.columnId)" [ngClass]="{'selected': tile.selected}">
+        {{tile.letter === 'Q' ? 'Qu':tile.letter}}
+        <div class="selected"></div>
+    </div>
+</div>

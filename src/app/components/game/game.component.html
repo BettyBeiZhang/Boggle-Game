@@ -1,0 +1,27 @@
+<div class="container vertical center">
+    <img src="assets/logo.png">
+    <!-- board component -->
+    <app-board [data]="boardData" id="game-table" class="horizontal wrap container-width" [tileClick]="handleClick.bind(this)"></app-board>
+    <div class="horizontal space-between container-width middle">
+        <h4>Current Word: <span id="current-word">{{currentWord}}</span></h4>
+        <button (click)="handleSubmit()">Submit Word</button>
+    </div>
+    <!-- score box -->
+    <div class="horizontal container-width">
+        <table class="score-panel">
+            <tr>
+                <td>Word</td>
+                <td>Score</td>
+            </tr>
+            <tr *ngFor="let score of wordScoreList">
+                <td>{{score.word}}</td>
+                <td>{{score.score}}</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>{{totalScore}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
