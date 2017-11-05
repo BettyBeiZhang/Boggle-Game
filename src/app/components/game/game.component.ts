@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {rollDice, shuffleBoard, isTileEqual, isAdjacent, calculateScore} from '../../utils/utils';
 
-
+/**
+ * App-game Component 
+ * @export
+ * @class GameComponent
+ * @implements {onInit}
+ */
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',
