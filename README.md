@@ -1,6 +1,8 @@
 # BoggleGame
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0. 
+
+This project delployed on Heroku at https://safe-sierra-16238.herokuapp.com/
 
 ## Development server
 
